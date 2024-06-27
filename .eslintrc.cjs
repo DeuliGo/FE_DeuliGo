@@ -31,6 +31,7 @@ module.exports = {
             }
         ],
         // 'semi': ['error', 'never'], 이렇게 규칙을 정할 수 있다.
-        'comma-dangle': ['error', 'never']
+        'comma-dangle': ['error', 'never'],
+        'react/prop-types': 'off'
     }
 }
