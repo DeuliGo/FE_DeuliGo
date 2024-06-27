@@ -30,7 +30,7 @@ const InputField = ({ label, name, type, placeholder, autoFocus = false }) => {
                 type={type}
                 autoFocus={autoFocus}
                 placeholder={placeholder}
-                className="text-sm mb-4 p-2 px-3 h-11 border border-slate-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="text-sm mb-4 p-2 px-3 h-11 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
         </>
     )

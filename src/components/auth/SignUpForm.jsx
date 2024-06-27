@@ -22,7 +22,7 @@ const SignUpForm = () => {
             <InputField label="이메일" name="email" type="text" placeholder="이메일" />
             <InputField label="비밀번호" name="password" type="password" placeholder="비밀번호" />
             <InputField label="비밀번호 확인" name="passwordCheck" type="password" placeholder="비밀번호 확인" />
-            <button type="submit" className="text-lg text-white bg-amber-400 mt-6 font-semibold">
+            <button type="submit" className="text-lg text-white bg-amber-400 mt-6 font-semibold rounded-xl py-2.8">
                 회원가입
             </button>
         </form>
