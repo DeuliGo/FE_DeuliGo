@@ -8,30 +8,16 @@ Date        Author   Status    Description
 2024.06.30  임도헌    Created
 */
 
-import { useEffect, useState } from 'react'
-import SearchBox from '../components/main/SearchBox'
-import SearchResult from './../components/main/SearchResult'
+import BoardTap from '../components/board/BoardTap'
+import Search from '../components/board/Search'
+import map from '../assets/images/map.png'
 
 const Main = () => {
-    const [query, setQuery] = useState('')
-    const [searching, setSearching] = useState('')
-    const [results, setResults] = useState([])
-
-    useEffect(() => {
-        setSearching(true)
-        // axios 자리 미완성
-        setResults()
-    }, [])
-
     return (
         <div>
-            <SearchBox
-                value={query}
-                onChange={e => {
-                    setQuery(e.target.value)
-                }}
-            />
-            <SearchResult results={results} searching={searching} />
+            <Search />
+            <BoardTap />
+            <img className="w-[375px] h-[477px]" src={map}></img>
         </div>
     )
 }
